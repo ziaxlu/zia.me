@@ -1,0 +1,184 @@
+:root {
+    --light: #FCFEFD;
+    --dark: #1F1F1F;
+}
+
+img, svg {
+    pointer-events: none;
+}
+
+* {
+    /* border: 3px solid grey; */
+    background-color: var(--light);
+    
+}
+
+/* landing page */
+
+#large {
+    display: none;
+}
+
+.container {
+    display: flex;
+    /* aligns to center */
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    /* border: 3px solid grey; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    max-width: 750px;
+    margin: auto;
+    /* border: 3px solid green; */
+}
+
+.open-eye {
+    fill: var(--dark);
+    stroke: var(--dark);
+    opacity: 0;
+    /* stroke: red; */
+}
+
+.text, .closed-eye, .icon, .about .circle {
+    fill: var(--dark);
+    /* fill: aqua; */
+}
+
+.closed-eye, .icon, .circle {
+    stroke: var(--dark);
+    /* stroke: red; */
+}
+
+.about {
+    width: 50%;
+    /* border: 3px solid green; */
+}
+
+.about .svg {
+    fill: var(--dark);
+}
+
+.about:hover .closed-eye {
+    opacity: 0;
+}
+
+.about:hover .open-eye {
+    opacity: 100;
+}
+
+#small {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border-radius: 50%; */
+    /* border: 3px solid red; */
+}
+
+.experience {
+    /* background-color: red;
+    border: 3px solid green; */
+    width: 25%;
+    /* margin-left: 1.5vw; */
+    /* height: fit-content; */
+}
+
+.experience:hover .closed-eye {
+    opacity: 0;
+}
+
+.experience:hover .open-eye {
+    opacity: 1;
+}
+
+.projects {
+    width: 25%;
+    /* margin-left: 10px; */
+    margin-top: 10%;
+    /* height: fit-content; */
+    /* top: 300px; */
+    /* border: 3px solid blue; */
+
+}
+
+.projects:hover .closed-eye {
+    opacity: 0;
+}
+
+.projects:hover .open-eye {
+    opacity: 100;
+}
+
+.notes {
+    width: 25%;
+}
+
+.notes:hover .closed-eye {
+    opacity: 0;
+}
+
+.notes:hover .open-eye {
+    opacity: 1;
+}
+
+@media screen and (max-width: 550px) {
+    #small {
+        display: none;
+    }
+
+    .content {
+        position: relative;
+        width: 50%;
+        margin-top: 10%;
+        /* border: 3px solid grey; */
+    }
+
+    #large {
+        display: block;
+        width: 100%;
+        /* border: 3px solid red */
+    }
+
+    .about {
+        width: 100%;
+        stroke-width: 0;
+        /* border: 3px solid green; */
+    }
+
+    .experience-large {
+        width: 100%;
+        margin: auto;
+        margin-top: 15%;
+        stroke-width: 0;
+        /* background-color: green;
+        border: 3px solid red; */
+    }
+
+    .projects-large {
+        width: 100%;
+        margin: auto;
+        margin-top: 15%;
+        stroke-width: 0;
+        /* border: 3px solid red; */
+    }
+
+    .notes-large {
+        width: 100%;
+        margin: auto;
+        margin-top: 15%;
+        stroke-width: 0;
+        /* margin-bottom: 15%; */
+        /* border: 3px solid red; */
+    }
+}
