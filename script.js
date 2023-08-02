@@ -11,29 +11,6 @@ fetch('/navbar.html')
 })
 
 
-// highlight active nav bar page (doesn't work)
-// let links = document.querySelectorAll(".links a");
-// let bodyId = document.querySelector("body").id;
-
-// for(let link of links){
-//     if(link.dataset.active == bodyId){
-//         link.classList.add("active");
-//     }
-// }
-
-
-
-// also doesn't work to highlight
-// const current = 0;
-// for (var i = 0; i < document.links.length; i++) {
-//     if (document.links[i].href === document.URL) {
-//         current = i;
-//     }
-// }
-// document.links[current].className = 'current';
-
-
-
 // reveal words through griaffe spots (about me page)
 function revealWord(spotId, wordId) {
 
@@ -73,20 +50,3 @@ function revealWord(spotId, wordId) {
     // click.style.opacity = '1';
     $("#click").fadeIn();
 }
-
-
-// open collapsible
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.maxHeight){
-//       content.style.maxHeight = null;
-//     } else {
-//       content.style.maxHeight = content.scrollHeight + "px";
-//     } 
-//   });
-// }
