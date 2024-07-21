@@ -1,7 +1,7 @@
 
 // importnav bar htmml
 const nav = document.querySelector('.navbar')
-fetch('/zixuan.me/navbar.html')
+fetch('navbar.html')
     .then(res => res.text())
     .then(data => {
         nav.innerHTML = data
