@@ -1,14 +1,14 @@
 
 // importnav bar htmml
 const nav = document.querySelector('.navbar')
-fetch('/navbar.html')
-.then(res=>res.text())
-.then(data=>{
-    nav.innerHTML=data
-    const parser = new DOMParser()
-    const doc = parser.parseFromString(data, 'text/html')
-    eval(doc.querySelector('script').textContent)
-})
+fetch('/zixuan.me/navbar.html')
+    .then(res => res.text())
+    .then(data => {
+        nav.innerHTML = data
+        const parser = new DOMParser()
+        const doc = parser.parseFromString(data, 'text/html')
+        eval(doc.querySelector('script').textContent)
+    })
 
 
 // reveal words through griaffe spots (about me page)
@@ -39,7 +39,7 @@ function revealWord(spotId, wordId) {
 
     var show = true;
 
-    for (i=1; i<=8; i++) {
+    for (i = 1; i <= 8; i++) {
         if (document.getElementById('w' + i).style.opacity == 1) {
             // click.style.opacity = '0';
             $("#click").fadeOut();
