@@ -7,7 +7,6 @@ A small static portfolio site.
 From the project root, run:
 
 ```bash
-cd /Users/zlu/Git/zia.me
 python3 -m http.server 8000
 ```
 
